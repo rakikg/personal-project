@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">rakesh kg</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#crud">CRUD Demo</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section id="home">
+    <div>
+      <p class="hero-eyebrow">Welcome to my portfolio</p>
+      <h1><br/>rakesh kg</h1>
+      <p class="hero-subtitle">BCA Student · Web Developer · Problem Solver</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <span class="section-label">Get to know me</span>
+    <h2>About Me</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Hi! I'm a first-year <strong>BCA student</strong> passionate about building things for the web.</p>
+        <p>This portfolio demonstrates a full-stack CRUD application using Express and MySQL.</p>
+      </div>
+
+      <div class="about-card">
+        <span class="card-label">Quick Info</span>
+        <table>
+          <tr><td>Name</td><td>rakesh kg</td></tr>
+          <tr><td>Course</td><td>BCA – 1st Year</td></tr>
+          <tr><td>Location</td><td>Bangalore</td></tr>
+          <tr><td>Editor</td><td>VS Code</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <span class="section-label">Skills</span>
+    <h2>Technologies</h2>
+
+    <div class="skills-grid">
+      <div><h3>HTML & CSS</h3></div>
+      <div><h3>JavaScript</h3></div>
+      <div><h3>MySQL</h3></div>
+      <div><h3>Express.js</h3></div>
+      <div><h3>Git & GitHub</h3></div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <span class="section-label">Projects</span>
+    <h2>My Work</h2>
+
+    <div class="projects-grid">
+      <div>
+        <h3>Portfolio Website</h3>
+        <p>Full-stack portfolio with CRUD operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ===== CRUD DEMO ===== -->
+  <section id="crud">
+    <span class="section-label">CRUD Demo</span>
+    <h2>Projects Manager</h2>
+
+    <!-- FORM -->
+    <form id="crud-live-form">
+      <input type="text" id="crud-title" placeholder="Title" required />
+      <input type="text" id="crud-tech" placeholder="Tech" required />
+      <textarea id="crud-desc" placeholder="Description" required></textarea>
+      <button type="submit">Save</button>
+    </form>
+
+    <!-- PROJECT LIST -->
+    <div id="live-projects-list"></div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <span class="section-label">Contact</span>
+    <h2>Send Message</h2>
+
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <p>Built with HTML, CSS, JavaScript, Express & MySQL</p>
+    <p id="footer-year"></p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
