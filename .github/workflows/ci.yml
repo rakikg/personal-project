@@ -20,5 +20,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run server check
-        run: node server.js
+      - name: Test server file
+        run: node -e "require('./server.js'); console.log('Server file is valid');"
